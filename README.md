@@ -25,3 +25,18 @@ It shows live statistics such as:
    ```bash
    git clone https://github.com/<your-username>/go-log-lab.git
    cd go-log-lab
+
+▶️ Usage
+
+Run against your Nginx logs:
+
+sudo tail -F /var/log/nginx/access.log | ./stream_analyzer
+
+
+Sample output:
+
+=== Live Log Stats ===
+Total: 249  Errors(4xx/5xx): 1
+Status: 200=248 | 404=1
+Top IPs:
+  ::1                    249
